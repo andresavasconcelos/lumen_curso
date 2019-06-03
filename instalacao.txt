@@ -1,0 +1,33 @@
+Dentro da pasta antes da pasta do projeto colocar esse comando
+
+composer creat-project --prefer-dist laravel/lumen
+
+provavelmente dará um erro de versao do php
+
+colocar o setenv na psta criada e dar o comando
+
+composer update
+
+para rodar o projeto na porta 8000 rodar o seguinde compando depois das instalações
+
+entrar na pasta lumen que será criada
+
+php -S localhost:8000 -t public
+
+php artisan migrates:rollback faz com que volte a ultima atualização
+
+php artisan make:migration creat_users_table // criar tabela
+
+em database descomentar o seeder
+
+dar o comando php artisan make:seeder UsersTableSeeder
+
+depois fazer as configs da modelFactory e UsersTableSeeder
+
+dar o comando php artisan db:seed
+
+
+
+
+
+
